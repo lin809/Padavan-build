@@ -38,9 +38,9 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: MI-R3AC
+        TNAME: MI-3A
       run: |
-        cd /opt/rt-n56u/trunk
+        cd /opt/rt-MI-3A/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/$TNAME.config not found "
         exit 1
